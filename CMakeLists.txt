@@ -3,13 +3,13 @@ project (reiserfs-defrag)
 cmake_minimum_required (VERSION 2.6)
 
 add_executable (reiserfs-defrag
-	defrag.cpp
-	reiserfs.cpp
-	journal.cpp
-	bitmap.cpp
-	block.cpp
-	progress.cpp
-	entry.cpp
+	src/defrag.cpp
+	src/reiserfs.cpp
+	src/journal.cpp
+	src/bitmap.cpp
+	src/block.cpp
+	src/progress.cpp
+	src/entry.cpp
 )
 
 target_link_libraries(reiserfs-defrag
